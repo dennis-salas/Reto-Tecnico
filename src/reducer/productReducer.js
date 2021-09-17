@@ -13,11 +13,6 @@ export const productReducer = (state = initialState, action) => {
                 ...state,
                 product: [action.payload, ...state.product]
             }
-        case types.LoadProduct:
-            return {
-                ...state,
-                product: [...action.payload]
-            }
         case types.ActiveProduct:
             return {
                 ...state,
@@ -25,7 +20,14 @@ export const productReducer = (state = initialState, action) => {
                     ...action.payload
                 }
             }
+        case types.LoadProduct:
+            //console.log(action.payload);
+            return {
+                ...state,
+                product: [...action.payload]
+            }
         case types.UpdateProduct:
+            console.log(action.payload.id)
             return {
                 ...state,
                 product: state.product.map(
@@ -38,6 +40,12 @@ export const productReducer = (state = initialState, action) => {
             return {
                 ...state,
                 active: null
+            }
+        case types.DeleteProduct:
+            return {
+                ...state,
+                active: null,
+                product: state.product.filter(product => product.id !== action.payload)
             }
         default:
             return state;

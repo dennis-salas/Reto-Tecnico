@@ -10,7 +10,7 @@ Libreria:ReactJS: npm sun start
 Marco de trabajo Bootstrap: npm install react-bootstrap bootstrap
 
 
-Base de Datos Firstore: npm i firebase@8
+Base de Datos Firstore: npm i firebase
 
 
 Redux: npm install react-redux redux

@@ -1,18 +1,19 @@
 
 export const types = {
-    login: 'login',
-    logout: 'logout',
-    Registrar: 'Registrar',
+    Login: 'Login',
+    Logout: 'Logouth',
+    uiSetError: 'uiSetError',
+    uiRemoveError: 'uiRemoveError',
+    uiStartLoading: 'uiStartLoading',
+    uiFinishLoading: 'uiFinishLoading',
+
+    //Acciones para hacer el CRUD
     AddNewProduct: 'AddNewProduct',
-    ActiveProduct: 'ActiveProduct',
     LoadProduct: 'LoadProduct',
-    UpdateProduct: 'UpdateProduct',
-    DeleteProduct: 'DeleteProduct',
     FileUrlProduct: 'FileUrlProduct',
+    ActiveProduct: 'ActiveProduct',
+    UpdateProduct: 'UpdateProduct',
     CleanProduct: 'CleanProduct',
     SaveProducts: ' SaveProducts',
-    uiSetError: '[UI] set Error',
-    uiRemoveError: '[UI] Remove Error',
-    uiStartLoading: '[UI] Start loading',
-    uiFinishLoading: '[UI] Finish loading',
+    DeleteProduct: 'DeleteProduct',
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     BrowserRouter,
     Switch,
@@ -7,8 +7,17 @@ import {
 import NavBarProduct from '../Components/NavBarProduct';
 import App from '../Container/App';
 import FormProduct from '../Container/FormProduct';
+import { useDispatch } from 'react-redux';
+import { startLoandingProduct } from '../action/productAcion';
 
 const AppRouter = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(startLoandingProduct());
+    }, [dispatch]);
+
     return (
         <BrowserRouter>
             <NavBarProduct />

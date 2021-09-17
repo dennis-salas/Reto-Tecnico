@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import CardProduct from '../Components/CardProduct'
-import { Row } from 'react-bootstrap'
-import FormProduct from './FormProduct'
+import CardProduct from '../Components/CardProduct';
+import { Row } from 'react-bootstrap';
+import FormProduct from './FormProduct';
 
 const App = () => {
 

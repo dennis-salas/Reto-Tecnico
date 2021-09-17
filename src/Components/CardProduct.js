@@ -13,13 +13,13 @@ const CardProduct = (product) => {
                         <ListGroupItem>Precio: <small>{product.product.price}</small></ListGroupItem>
                         <ListGroupItem>Categoria: <small>{product.product.category}</small></ListGroupItem>
                     </ListGroup>
-                    <button className="btn btn-primary mr-3 my-2"
+                    {/*<button className="btn btn-primary mr-3 my-2"
                     ///onClick={handleEdit}
                     >
                         Editar</button>
                     <button className="btn btn-danger mr-3 my-2 mx-2"
                     ///onClick={handleDelete}
-                    >Eliminar</button>
+                    >Eliminar</button>*/}
                 </Card.Body>
             </Card>
         </Col>
